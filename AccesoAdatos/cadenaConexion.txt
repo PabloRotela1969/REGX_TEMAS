@@ -1,0 +1,2 @@
+﻿ string cadenaConexion = @"Data Source=PFR-PC\SQLEXPRESS;Initial Catalog=reg2;Integrated Security=True";Timeout=20;
+        //string cadenaConexion = @"Data Source=TPDL3043;Initial Catalog=reg2;Integrated Security=True";

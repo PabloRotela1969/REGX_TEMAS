@@ -1,0 +1,393 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{05D84964-5615-4E5D-BA54-38C7E7FFFF50}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RegistrosNet</RootNamespace>
+    <AssemblyName>RegistrosNet</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>
+    </StartupObject>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <ApplicationIcon>calendar.ico</ApplicationIcon>
+    <TargetZone>LocalIntranet</TargetZone>
+    <GenerateManifests>true</GenerateManifests>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>http://localhost/RegistrosNet/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="clibord, Version=1.0.4623.1922, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Windows.Presentation">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CoorLinea.cs" />
+    <Compile Include="frmAplicaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAplicaciones.Designer.cs">
+      <DependentUpon>frmAplicaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAplicacionesMenues.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAplicacionesMenues.Designer.cs">
+      <DependentUpon>frmAplicacionesMenues.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAplicacionesRoles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAplicacionesRoles.Designer.cs">
+      <DependentUpon>frmAplicacionesRoles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAplicacionesRutas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAplicacionesRutas.Designer.cs">
+      <DependentUpon>frmAplicacionesRutas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmArchivos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmArchivos.Designer.cs">
+      <DependentUpon>frmArchivos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmArchivosDesvinculados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmArchivosDesvinculados.Designer.cs">
+      <DependentUpon>frmArchivosDesvinculados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBloques.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBloques.Designer.cs">
+      <DependentUpon>frmBloques.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmClipGraf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmClipGraf.Designer.cs">
+      <DependentUpon>frmClipGraf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDirectorio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDirectorio.Designer.cs">
+      <DependentUpon>frmDirectorio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDirSeleccionarUnArchivo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDirSeleccionarUnArchivo.Designer.cs">
+      <DependentUpon>frmDirSeleccionarUnArchivo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmElegirRutaParaNombre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmElegirRutaParaNombre.Designer.cs">
+      <DependentUpon>frmElegirRutaParaNombre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmErroresBackup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmErroresBackup.Designer.cs">
+      <DependentUpon>frmErroresBackup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInicio.Designer.cs">
+      <DependentUpon>frmInicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInputBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInputBox.Designer.cs">
+      <DependentUpon>frmInputBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMails.Designer.cs">
+      <DependentUpon>frmMails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmModos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmModos.Designer.cs">
+      <DependentUpon>frmModos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNexos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNexos.Designer.cs">
+      <DependentUpon>frmNexos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNotas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNotas.Designer.cs">
+      <DependentUpon>frmNotas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmObjetos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmObjetos.Designer.cs">
+      <DependentUpon>frmObjetos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPersona.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPersona.Designer.cs">
+      <DependentUpon>frmPersona.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRegistros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegistros.Designer.cs">
+      <DependentUpon>frmRegistros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTelefonos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTelefonos.Designer.cs">
+      <DependentUpon>frmTelefonos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTemas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTemas.Designer.cs">
+      <DependentUpon>frmTemas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTextoRecordatorio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTextoRecordatorio.Designer.cs">
+      <DependentUpon>frmTextoRecordatorio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTipos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTipos.Designer.cs">
+      <DependentUpon>frmTipos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVerbos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVerbos.Designer.cs">
+      <DependentUpon>frmVerbos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Images.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmAplicaciones.resx">
+      <DependentUpon>frmAplicaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAplicacionesMenues.resx">
+      <DependentUpon>frmAplicacionesMenues.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAplicacionesRoles.resx">
+      <DependentUpon>frmAplicacionesRoles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAplicacionesRutas.resx">
+      <DependentUpon>frmAplicacionesRutas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmArchivos.resx">
+      <DependentUpon>frmArchivos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmArchivosDesvinculados.resx">
+      <DependentUpon>frmArchivosDesvinculados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBloques.resx">
+      <DependentUpon>frmBloques.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmClipGraf.resx">
+      <DependentUpon>frmClipGraf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDirectorio.resx">
+      <DependentUpon>frmDirectorio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDirSeleccionarUnArchivo.resx">
+      <DependentUpon>frmDirSeleccionarUnArchivo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmElegirRutaParaNombre.resx">
+      <DependentUpon>frmElegirRutaParaNombre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmErroresBackup.resx">
+      <DependentUpon>frmErroresBackup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInicio.resx">
+      <DependentUpon>frmInicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInputBox.resx">
+      <DependentUpon>frmInputBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMails.resx">
+      <DependentUpon>frmMails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmModos.resx">
+      <DependentUpon>frmModos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNexos.resx">
+      <DependentUpon>frmNexos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNotas.resx">
+      <DependentUpon>frmNotas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmObjetos.resx">
+      <DependentUpon>frmObjetos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPersona.resx">
+      <DependentUpon>frmPersona.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegistros.resx">
+      <DependentUpon>frmRegistros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTelefonos.resx">
+      <DependentUpon>frmTelefonos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTemas.resx">
+      <DependentUpon>frmTemas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTextoRecordatorio.resx">
+      <DependentUpon>frmTextoRecordatorio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTipos.resx">
+      <DependentUpon>frmTipos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVerbos.resx">
+      <DependentUpon>frmVerbos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Textos.cs" />
+    <Compile Include="Utilidades.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Clases\Clases.csproj">
+      <Project>{80A1DD39-734B-4D91-94A8-E6221DC0B528}</Project>
+      <Name>Clases</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="calendar.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

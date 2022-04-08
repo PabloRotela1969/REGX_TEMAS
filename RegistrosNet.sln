@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RegistrosNet", "RegistrosNet\RegistrosNet.csproj", "{05D84964-5615-4E5D-BA54-38C7E7FFFF50}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccesoAdatos", "AccesoAdatos\AccesoAdatos.csproj", "{A14029FB-CDF8-4F94-A03D-D85C9017FD9C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clases", "Clases\Clases.csproj", "{80A1DD39-734B-4D91-94A8-E6221DC0B528}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{05D84964-5615-4E5D-BA54-38C7E7FFFF50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05D84964-5615-4E5D-BA54-38C7E7FFFF50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05D84964-5615-4E5D-BA54-38C7E7FFFF50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05D84964-5615-4E5D-BA54-38C7E7FFFF50}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A14029FB-CDF8-4F94-A03D-D85C9017FD9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A14029FB-CDF8-4F94-A03D-D85C9017FD9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A14029FB-CDF8-4F94-A03D-D85C9017FD9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A14029FB-CDF8-4F94-A03D-D85C9017FD9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80A1DD39-734B-4D91-94A8-E6221DC0B528}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80A1DD39-734B-4D91-94A8-E6221DC0B528}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80A1DD39-734B-4D91-94A8-E6221DC0B528}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80A1DD39-734B-4D91-94A8-E6221DC0B528}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
